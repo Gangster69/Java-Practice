@@ -13,28 +13,26 @@ public class Guess {
 		// TODO Auto-generated method stub
 		int max =100;
 		int min = 1;
-		Random radom =new Random();
-		int number =radom.nextInt(100)+1;
-		System.out.println(number);
-		System.out.println("Guess a number(1-100):");
-		while(true) {
-			Scanner sc = new Scanner(System.in);
-			int anwser =sc.nextInt();
-			
-			if(anwser == number) {
-				System.out.println("Your are right!");
-			}
-			else if(anwser <number){
-				min =anwser;
-				System.out.println(anwser+"to"+max);
-			}
-			else if(anwser>number) {
-				max =anwser;
-				System.out.println(min+"to"+anwser);
-			}
-		}
+		Random random = new Random();
+		int secret = random.nextInt(100)+1;
+		System.out.println(secret);
+		System.out.println("enter the number(1-100):");
+		Scanner sc = new Scanner(System.in);
 		
-
+		while(true) {
+			int x =sc.nextInt();
+			if (x == secret) {
+				System.out.println("Good job!");
+			}
+			else if(x<secret) {
+				min =x;
+				System.out.println(x+"to"+max);
+			}
+			else if(x>secret) {
+				max=x;
+				System.out.println(min+"to"+x);
+			}
+		}	
 	}
 	
 }

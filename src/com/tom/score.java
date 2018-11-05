@@ -11,8 +11,7 @@ public class score {
 		Student stu =new Student();
 		stu.name ="Tom";
 		stu.math = 70;
-		stu.english =90;
+		stu.english = 90;
 		stu.print();
-		
 	}
 }

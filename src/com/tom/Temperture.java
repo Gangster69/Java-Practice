@@ -1,5 +1,4 @@
 package com.tom;
-
 public class Temperture {
 	double calsius;
 	
@@ -7,7 +6,7 @@ public class Temperture {
 		this.calsius =calsius;
 	}
 	public double fahrenheit() {
-		double f =calsius*(9.0/5)+32;
+		double f = calsius *(9.0/5)+32;
 		return f;
 	}
 

@@ -10,17 +10,17 @@ public class Time {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("Please enter the time(Second):");
+		System.out.println("enter the time(second):");
 		double second;
-		int minute , hour ,remainder ;
-		final int SEC_PER_MIN =60;
-		final int MIN_PER_H =60;
+		int minute,hour,remainder;
+		int SEC_PER_MIN = 60;
+		int MIN_PER_H = 60;
 		Scanner sc =new Scanner(System.in);
 		second =sc.nextDouble();
-		minute =(int)(second/SEC_PER_MIN);
+		minute =(int)second/SEC_PER_MIN;
 		hour =minute/MIN_PER_H;
-		remainder =minute % MIN_PER_H;
-		System.out.printf("%.2f sec = %d H , %d min\n",second , hour , remainder);
+		remainder = minute % MIN_PER_H;
+		System.out.printf("%.2f second = %d hour ,%d minute\n",second,hour,remainder);
+		
 	}
-
 }
